@@ -8,11 +8,11 @@ function LaunchItem({
 }) {
   return (
     <React.Fragment>
-      <div className="card card-body mb-3">
+      <div className="card card-body bg-dark mb-3">
         <div className="row">
           <div className="col-md-9">
             <h4>
-              Mission:{' '}
+              <span className="text-muted">Mission: </span>
               <span
                 className={classnames({
                   'text-success': launch_success,
@@ -23,7 +23,7 @@ function LaunchItem({
                 {mission_name}
               </span>
             </h4>
-            <p>
+            <p className="text-primary">
               Date:{' '}
               <Moment format="YYYY-MM-DD HH:mm">{launch_date_local}</Moment>
             </p>

@@ -24,7 +24,7 @@ function Launch({ match }) {
     <React.Fragment>
       <div>
         <h1 className="display-4 my-3">
-          <span className="text-dark">Mission:</span> {mission_name}
+          <span className="text-muted">Mission:</span> {mission_name}
         </h1>
         <h4 className="mb-3">Launch Details</h4>
         <ul className="list-group">

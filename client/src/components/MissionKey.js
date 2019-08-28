@@ -2,7 +2,7 @@ import React from 'react';
 
 function MissionKey() {
   return (
-    <div className="my-3">
+    <div className="my-3 text-warning">
       <p>
         <span className="px-3 mr-2 bg-success" /> = Success
       </p>
