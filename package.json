@@ -4,7 +4,8 @@
   "description": "youtube [GraphQL With React & Apollo [1] - Express GraphQL Server] tutorial",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/sehyunPark-kr/react-apollo-graphql/issues"
   },
-  "homepage": "https://github.com/sehyunPark-kr/react-apollo-graphql#readme"
+  "homepage": "https://github.com/sehyunPark-kr/react-apollo-graphql#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
