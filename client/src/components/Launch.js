@@ -1,35 +1,16 @@
 import React from 'react';
-import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
+import { LAUNCH_QUERY } from '../apollo/Query';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
-const LAUNCH_QUERY = gql`
-  query LaunchQuery($flight_number: string!) {
-    launch(flight_number: $flight_number) {
-      flight_number
-      mission_name
-      launch_year
-      launch_success
-      rocket {
-        rocket_id
-        rocket_name
-        rocket_type
-      }
-    }
-  }
-`;
-
-function Launch(props) {
-  const { loading, error, data } = useQuery(
-    LAUNCH_QUERY,
-    props.match.params.flight_number,
-  );
+function Launch({ match }) {
+  const { loading, error, data } = useQuery(LAUNCH_QUERY, {
+    variables: { flight_number: match.params.flight_number },
+  });
 
   if (loading) return <h4>loading...</h4>;
   if (error) console.log(error);
-
-  console.log(data);
 
   const {
     flight_number,

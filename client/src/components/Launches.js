@@ -1,20 +1,8 @@
 import React from 'react';
-import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
+import { LAUNCHES_QUERY } from '../apollo/Query';
 import LaunchItem from './LaunchItem';
 import MissionKey from './MissionKey';
-
-const LAUNCHES_QUERY = gql`
-  query LaunchesQuery {
-    launches {
-      flight_number
-      mission_name
-      launch_year
-      launch_date_local
-      launch_success
-    }
-  }
-`;
 
 function Launches() {
   const { loading, error, data } = useQuery(LAUNCHES_QUERY);
