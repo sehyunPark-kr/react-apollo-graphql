@@ -1,0 +1,19 @@
+{
+  "name": "react-apollo-graphql",
+  "version": "1.0.0",
+  "description": "youtube [GraphQL With React & Apollo [1] - Express GraphQL Server] tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sehyunPark-kr/react-apollo-graphql.git"
+  },
+  "author": "sehyunPark-kr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sehyunPark-kr/react-apollo-graphql/issues"
+  },
+  "homepage": "https://github.com/sehyunPark-kr/react-apollo-graphql#readme"
+}
